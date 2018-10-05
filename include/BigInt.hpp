@@ -102,6 +102,8 @@ class BigInt {
 
         // Random number generating functions:
         friend BigInt big_random(size_t);
+        template <class T>
+        friend BigInt big_random(const T& low, const T& high);
 };
 
 #endif  // BIG_INT_HPP
